@@ -1,0 +1,179 @@
+* {
+    box-sizing: content-box;
+
+  }
+
+  header {
+      
+     height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    
+  }
+
+  .banner {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: lightcyan;
+    width: 70%;
+
+  }
+  @media only screen and (max-width: 315px) {
+    .banner {
+      font-size: 12px;
+    }
+  }
+  body, html {
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    height: 1vh;
+  }
+
+
+  .wallcont {
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      grid-template-rows: repeat(9, 1fr);
+      overflow: hidden;
+      background-repeat: repeat-x;
+      background-image: url("https://media.istockphoto.com/photos/blank-gallery-wall-picture-id185100559?b=1&k=20&m=185100559&s=170667a&w=0&h=0FXYueZhe3A5nDfw61erzwRjmEEfSOoHuisb9ipRuT4=");
+      height: 300px;
+      width: 300px;
+      background-position: center;
+      
+     
+      
+    }
+
+    header a {
+      display: inline-block;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      border: 1px solid white;
+      border-radius: 5px;
+      margin: 0 10px 10px 15px;
+      padding: 0 5px;
+      color: white;
+      text-decoration: none;
+     
+    }
+    
+    a:hover {
+      cursor: pointer;
+      background-color: rgba(236, 214, 16, 0.5);
+    
+    }
+    #heart1 {
+      grid-row: 3 / span 7;
+      grid-column: 3 / span 7;
+      opacity: 0;
+      background-image: url("/hearts.png");
+      width: 80%;
+      height: 70%;
+      line-height: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+    @keyframes like {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    #heart2 {
+      grid-row: 3 / span 7;
+      grid-column: 3 / span 7;
+      opacity: 1;
+      background-image: url("/hearts.png");
+      width: 70%;
+      height: 70%;
+      line-height: 0;
+      background-repeat: no-repeat;
+    }
+
+    #heart3 {
+      grid-row: 3 / span 7;
+      grid-column: 3 / span 7;
+      opacity: 1;
+      background-image: url("/hearts.png");
+      width: 70%;
+      height: 70%;
+      line-height: 0;
+      background-repeat: no-repeat;
+    }
+
+
+   
+    .arttitle {
+      white-space: nowrap;
+      font-size: 10px;
+      padding: 0;
+      margin: 0;
+      justify-self: center;
+      line-height: 0;
+      color: black;
+      align-self: center;
+      grid-column: 4 / span 3;
+      grid-row: 1 / span .5;
+    }
+  .art {
+    
+    grid-row: 2 / span 7;
+    grid-column: 2 / span 7;
+    border: 3px solid black;
+  }
+
+  #feedcont {
+      margin-top: 20px;
+      
+      
+      flex-wrap: nowrap;
+      
+      background: #DBD0BC;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  display: grid;
+  
+  grid-auto-flow: column;
+  grid-auto-columns: ;
+  
+      
+
+  }
+  #feedcont2 {
+    margin-top: 20px;
+      display: inline-flex;
+      flex-wrap: nowrap;
+      
+      background: #DBD0BC;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  display: grid;
+  
+  grid-auto-flow: column;
+  grid-auto-columns: 100;
+  
+   
+    
+
+}
+  #feedcontcont {
+    padding-top: 5px;
+    background-color: rgb(121, 118, 118);
+    width: 100%;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
